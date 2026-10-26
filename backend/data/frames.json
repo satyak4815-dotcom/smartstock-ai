@@ -1,0 +1,67 @@
+{
+  "classes": {
+    "Product": {
+      "is_a": null,
+      "type": "class",
+      "slots": {
+        "reorder_level": { "value": 20, "type": "integer", "source": "own" },
+        "min_order_qty": { "value": 10, "type": "integer", "source": "own" },
+        "holding_cost_rate": { "value": 0.5, "type": "float", "source": "own" },
+        "warehouse_zone": { "value": "General Floor", "type": "string", "source": "own" }
+      },
+      "demons": {
+        "status": "if_needed_status",
+        "is_fast_moving": "if_needed_fast_moving"
+      }
+    },
+    "PerishableProduct": {
+      "is_a": "Product",
+      "type": "class",
+      "slots": {
+        "is_perishable": { "value": true, "type": "boolean", "source": "own" },
+        "storage_condition": { "value": "Cold Storage (4C)", "type": "string", "source": "own" },
+        "warehouse_zone": { "value": "Cold Zone C1", "type": "string", "source": "own" }
+      },
+      "demons": {
+        "near_expiry": "if_needed_near_expiry"
+      }
+    },
+    "NonPerishableProduct": {
+      "is_a": "Product",
+      "type": "class",
+      "slots": {
+        "is_perishable": { "value": false, "type": "boolean", "source": "own" },
+        "storage_condition": { "value": "Ambient Temperature", "type": "string", "source": "own" },
+        "warehouse_zone": { "value": "Dry Zone D2", "type": "string", "source": "own" }
+      },
+      "demons": {}
+    },
+    "Supplier": {
+      "is_a": null,
+      "type": "class",
+      "slots": {
+        "min_reliability_threshold": { "value": 0.80, "type": "float", "source": "own" },
+        "payment_terms": { "value": "Net 30 Days", "type": "string", "source": "own" }
+      },
+      "demons": {}
+    },
+    "RackSlot": {
+      "is_a": null,
+      "type": "class",
+      "slots": {
+        "max_capacity_crates": { "value": 5, "type": "integer", "source": "own" },
+        "temperature_controlled": { "value": false, "type": "boolean", "source": "own" }
+      },
+      "demons": {}
+    },
+    "Recommendation": {
+      "is_a": null,
+      "type": "class",
+      "slots": {
+        "confidence_level": { "value": "Medium", "type": "string", "source": "own" },
+        "generated_by": { "value": "SmartStock Forward Chaining Engine", "type": "string", "source": "own" }
+      },
+      "demons": {}
+    }
+  }
+}

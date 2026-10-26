@@ -1,0 +1,18 @@
+# Dependencies
+frontend/node_modules/
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+
+# Local Environment & Logs
+.env
+*.log
+scratch/
+.system_generated/
+
+# OS Files
+.DS_Store
+Thumbs.db

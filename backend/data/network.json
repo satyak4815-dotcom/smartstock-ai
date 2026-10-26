@@ -1,0 +1,91 @@
+{
+  "nodes": ["A", "B", "C", "D", "H1", "H2", "W1", "W2", "S0"],
+  "node_labels": {
+    "A": "Supplier A (Fresh Dairy)",
+    "B": "Supplier B (City Wholesale)",
+    "C": "Supplier C (Metro Foods)",
+    "D": "Supplier D (Daily Needs)",
+    "H1": "Distribution Hub 1",
+    "H2": "Distribution Hub 2",
+    "W1": "Warehouse 1",
+    "W2": "Warehouse 2",
+    "S0": "Store S0 (Goal)"
+  },
+  "edges": [
+    { "from": "A", "to": "H1", "weight": 8 },
+    { "from": "A", "to": "W1", "weight": 12 },
+    { "from": "B", "to": "H1", "weight": 10 },
+    { "from": "B", "to": "W2", "weight": 15 },
+    { "from": "C", "to": "H2", "weight": 20 },
+    { "from": "C", "to": "W2", "weight": 18 },
+    { "from": "D", "to": "H2", "weight": 9 },
+    { "from": "D", "to": "W1", "weight": 14 },
+    { "from": "H1", "to": "W1", "weight": 6 },
+    { "from": "H1", "to": "W2", "weight": 11 },
+    { "from": "H2", "to": "W2", "weight": 7 },
+    { "from": "H2", "to": "W1", "weight": 13 },
+    { "from": "W1", "to": "S0", "weight": 5 },
+    { "from": "W2", "to": "S0", "weight": 9 }
+  ],
+  "heuristics_to_S0": {
+    "W1": 4,
+    "W2": 7,
+    "H1": 9,
+    "H2": 13,
+    "A": 15,
+    "B": 18,
+    "C": 24,
+    "D": 17,
+    "S0": 0
+  },
+  "ao_star_graph": {
+    "root": "Fulfil 60 Milk1L",
+    "nodes": {
+      "Fulfil 60 Milk1L": {
+        "type": "OR",
+        "description": "Fulfil 60 units of Milk1L for the store",
+        "children": ["O1", "O2", "O3"]
+      },
+      "O1": {
+        "type": "LEAF",
+        "description": "Single order, Supplier A, 60 units",
+        "cost": 3300,
+        "heuristic": 3100
+      },
+      "O2": {
+        "type": "LEAF",
+        "description": "Single order, Supplier C, 60 units",
+        "cost": 3350,
+        "heuristic": 3200
+      },
+      "O3": {
+        "type": "AND",
+        "description": "Split order across A and C to regional warehouses",
+        "children": ["X", "Y"]
+      },
+      "X": {
+        "type": "LEAF",
+        "description": "30 units from Supplier A to Warehouse W1",
+        "cost": 1650,
+        "heuristic": 1500
+      },
+      "Y": {
+        "type": "LEAF",
+        "description": "30 units from Supplier C to Warehouse W2",
+        "cost": 1560,
+        "heuristic": 1500
+      }
+    }
+  },
+  "tsp_matrix": {
+    "labels": ["W1", "S1", "S2", "S3", "S4", "S5"],
+    "matrix": [
+      [ 0,  3,  4,  3, 12,  5 ],
+      [ 3,  0, 11,  4,  8, 12 ],
+      [ 4, 11,  0,  3,  4,  6 ],
+      [ 3,  4,  3,  0, 12,  9 ],
+      [ 12,  8,  4, 12,  0,  5 ],
+      [ 5, 12,  6,  9,  5,  0 ]
+    ]
+  }
+}

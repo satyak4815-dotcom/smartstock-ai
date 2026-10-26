@@ -1,0 +1,12 @@
+[
+  { "id": "B1", "items": ["Bread", "Milk1L", "Eggs (tray)"] },
+  { "id": "B2", "items": ["Bread", "Milk1L"] },
+  { "id": "B3", "items": ["Tea 250g", "Sugar 1kg", "Biscuits"] },
+  { "id": "B4", "items": ["Milk1L", "Tea 250g", "Sugar 1kg"] },
+  { "id": "B5", "items": ["Bread", "Eggs (tray)"] },
+  { "id": "B6", "items": ["Rice 5kg", "Cooking Oil 1L", "Salt 1kg"] },
+  { "id": "B7", "items": ["Detergent 1kg", "Soap"] },
+  { "id": "B8", "items": ["Bread", "Milk1L", "Curd 500g"] },
+  { "id": "B9", "items": ["Tea 250g", "Biscuits"] },
+  { "id": "B10", "items": ["Rice 5kg", "Cooking Oil 1L"] }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "P1",
+    "name": "Milk1L",
+    "category": "Dairy & Eggs",
+    "perishable": true,
+    "stock": 14,
+    "reorder_level": 20,
+    "daily_sales": 18,
+    "days_to_expiry": 3,
+    "sell_price": 62,
+    "suppliers": [
+      { "supplier_id": "A", "cost": 52 },
+      { "supplier_id": "C", "cost": 50 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": 5,
+    "pick_frequency": 18
+  },
+  {
+    "id": "P2",
+    "name": "Bread",
+    "category": "Bakery & Snacks",
+    "perishable": true,
+    "stock": 30,
+    "reorder_level": 20,
+    "daily_sales": 15,
+    "days_to_expiry": 1,
+    "sell_price": 45,
+    "suppliers": [
+      { "supplier_id": "A", "cost": 32 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": 3,
+    "pick_frequency": 15
+  },
+  {
+    "id": "P3",
+    "name": "Eggs (tray)",
+    "category": "Dairy & Eggs",
+    "perishable": true,
+    "stock": 6,
+    "reorder_level": 20,
+    "daily_sales": 12,
+    "days_to_expiry": 10,
+    "sell_price": 180,
+    "suppliers": [],
+    "min_order_qty": 10,
+    "max_shelf_life_days": 14,
+    "pick_frequency": 12
+  },
+  {
+    "id": "P4",
+    "name": "Curd 500g",
+    "category": "Dairy & Eggs",
+    "perishable": true,
+    "stock": 8,
+    "reorder_level": 15,
+    "daily_sales": 10,
+    "days_to_expiry": 4,
+    "sell_price": 40,
+    "suppliers": [
+      { "supplier_id": "A", "cost": 30 },
+      { "supplier_id": "C", "cost": 29 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": 6,
+    "pick_frequency": 10
+  },
+  {
+    "id": "P5",
+    "name": "Rice 5kg",
+    "category": "Grocery",
+    "perishable": false,
+    "stock": 10,
+    "reorder_level": 25,
+    "daily_sales": 9,
+    "days_to_expiry": null,
+    "sell_price": 330,
+    "suppliers": [
+      { "supplier_id": "B", "cost": 290 },
+      { "supplier_id": "D", "cost": 295 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 9
+  },
+  {
+    "id": "P6",
+    "name": "Cooking Oil 1L",
+    "category": "Grocery",
+    "perishable": false,
+    "stock": 12,
+    "reorder_level": 20,
+    "daily_sales": 8,
+    "days_to_expiry": null,
+    "sell_price": 165,
+    "suppliers": [
+      { "supplier_id": "B", "cost": 140 },
+      { "supplier_id": "C", "cost": 142 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 8
+  },
+  {
+    "id": "P7",
+    "name": "Detergent 1kg",
+    "category": "Cleaning",
+    "perishable": false,
+    "stock": 9,
+    "reorder_level": 15,
+    "daily_sales": 3,
+    "days_to_expiry": null,
+    "sell_price": 130,
+    "suppliers": [
+      { "supplier_id": "B", "cost": 105 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 3
+  },
+  {
+    "id": "P8",
+    "name": "Soap",
+    "category": "Cleaning",
+    "perishable": false,
+    "stock": 7,
+    "reorder_level": 12,
+    "daily_sales": 4,
+    "days_to_expiry": null,
+    "sell_price": 38,
+    "suppliers": [
+      { "supplier_id": "B", "cost": 28 },
+      { "supplier_id": "D", "cost": 29 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 4
+  },
+  {
+    "id": "P9",
+    "name": "Biscuits",
+    "category": "Bakery & Snacks",
+    "perishable": false,
+    "stock": 22,
+    "reorder_level": 20,
+    "daily_sales": 6,
+    "days_to_expiry": null,
+    "sell_price": 20,
+    "suppliers": [
+      { "supplier_id": "D", "cost": 15 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 6
+  },
+  {
+    "id": "P10",
+    "name": "Tea 250g",
+    "category": "Grocery",
+    "perishable": false,
+    "stock": 26,
+    "reorder_level": 22,
+    "daily_sales": 5,
+    "days_to_expiry": null,
+    "sell_price": 120,
+    "suppliers": [
+      { "supplier_id": "D", "cost": 98 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 5
+  },
+  {
+    "id": "P11",
+    "name": "Sugar 1kg",
+    "category": "Grocery",
+    "perishable": false,
+    "stock": 33,
+    "reorder_level": 30,
+    "daily_sales": 7,
+    "days_to_expiry": null,
+    "sell_price": 50,
+    "suppliers": [
+      { "supplier_id": "B", "cost": 42 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 7
+  },
+  {
+    "id": "P12",
+    "name": "Salt 1kg",
+    "category": "Grocery",
+    "perishable": false,
+    "stock": 80,
+    "reorder_level": 20,
+    "daily_sales": 2,
+    "days_to_expiry": null,
+    "sell_price": 28,
+    "suppliers": [
+      { "supplier_id": "D", "cost": 20 }
+    ],
+    "min_order_qty": 10,
+    "max_shelf_life_days": null,
+    "pick_frequency": 2
+  }
+]

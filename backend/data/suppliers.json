@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A",
+    "name": "Fresh Dairy Co",
+    "distance_km": 12,
+    "delivery_days": 1,
+    "moq": 20,
+    "reliability": 0.95,
+    "available": true
+  },
+  {
+    "id": "B",
+    "name": "City Wholesale",
+    "distance_km": 25,
+    "delivery_days": 2,
+    "moq": 30,
+    "reliability": 0.90,
+    "available": true
+  },
+  {
+    "id": "C",
+    "name": "Metro Foods",
+    "distance_km": 40,
+    "delivery_days": 3,
+    "moq": 25,
+    "reliability": 0.85,
+    "available": true
+  },
+  {
+    "id": "D",
+    "name": "Daily Needs Traders",
+    "distance_km": 18,
+    "delivery_days": 2,
+    "moq": 15,
+    "reliability": 0.92,
+    "available": true
+  }
+]
